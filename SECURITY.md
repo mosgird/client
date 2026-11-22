@@ -1,12 +1,12 @@
 # Security policy
 
-This repository holds the Mosgird client. The client holds users' private keys, decrypts their messages, and stores local state. The protocol has no server, so the client also connects to other devices directly and holds undelivered ciphertext until it is delivered. Problems here are high priority: a bug that exposes keys, plaintext, or the contents of local storage matters most.
+This repository holds the Mosgird desktop client. The client holds users' private keys, decrypts their messages, and stores local state. The protocol has no server, so the client also connects to other devices directly and holds undelivered ciphertext until it is delivered. Problems here are high priority: a bug that exposes keys, plaintext, or the contents of local storage matters most.
 
 ## Reporting a vulnerability
 
 Do not report security problems in a public issue or pull request.
 
-Report them privately with GitHub's private vulnerability reporting: open the **Security** tab of this repository and choose **Report a vulnerability**. You can also go directly to https://github.com/mosgird/client/security/advisories/new.
+Report them privately with GitHub's private vulnerability reporting: open the **Security** tab of this repository and choose **Report a vulnerability**. You can also go directly to https://github.com/mosgird/desktop/security/advisories/new.
 
 Include:
 
