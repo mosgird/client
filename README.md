@@ -1,6 +1,6 @@
-# Mosgird client
+# Mosgird desktop
 
-Client implementation of the Mosgird protocol. The specification is in mosgird/protocols.
+The desktop client of the Mosgird protocol. The specification is in mosgird/protocols.
 
 **Status:** not started. No code yet.
 
