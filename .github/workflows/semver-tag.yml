@@ -14,14 +14,14 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
-      # Pinned to full commit SHAs. Tags are kept as comments for humans.
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # Locked to commits in actions.lock (see actions-lock.yml).
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
 
       # The rules are kept once, in the protocol repository, at a pinned commit.
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/checkout@v7.0.1
         with:
           repository: mosgird/protocols
           ref: ccc9eed0b5fb6f5c2c8503500de4f1c56fc83daf
