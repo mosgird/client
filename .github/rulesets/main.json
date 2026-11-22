@@ -45,6 +45,9 @@
           },
           {
             "context": "actions-lock"
+          },
+          {
+            "context": "test-ratio"
           }
         ]
       }
