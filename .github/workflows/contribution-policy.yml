@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: mosgird/protocols
-          ref: ae64e6d715b92adce80d0beeb5f34b84b127ee6e
+          ref: 0d010c839f8fab2a99d3f47d81a8d775b442658f
           path: protocols
           persist-credentials: false
 
