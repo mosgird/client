@@ -1,6 +1,6 @@
 # Security policy
 
-This repository holds the Mosgird client. The client holds users' private keys, decrypts their messages, and stores local state. Problems here are high priority: a bug that exposes keys, plaintext, or the contents of local storage matters most.
+This repository holds the Mosgird client. The client holds users' private keys, decrypts their messages, and stores local state. The protocol has no server, so the client also connects to other devices directly and holds undelivered ciphertext until it is delivered. Problems here are high priority: a bug that exposes keys, plaintext, or the contents of local storage matters most.
 
 ## Reporting a vulnerability
 
@@ -20,7 +20,7 @@ We read every report. We do not yet guarantee a response time, and this page wil
 
 ## Scope
 
-In scope: anything in this client that lets someone other than the user read messages, obtain private keys, forge identities, bypass end-to-end encryption, or learn metadata the protocol says is hidden. The protocol's requirements are in [mosgird/protocols](https://github.com/mosgird/protocols); a client that breaks them is in scope even when the protocol document itself is correct.
+In scope: anything in this client that lets someone other than the user read messages, obtain private keys, forge identities, bypass end-to-end encryption, or learn metadata the protocol says is hidden. The protocol's requirements are in [mosgird/protocols](https://github.com/mosgird/protocols); a client that breaks them is in scope even when the protocol document itself is correct. This includes a client that reveals more to contacts, group members, network observers, or transport relays than the specification's overview section 3.3 lists. An example is leaking a network address that the chosen transport is meant to hide.
 
 Out of scope: problems in third-party libraries, unless our use of them is at fault; reports that need access to accounts or devices you do not own; denial-of-service testing against infrastructure you do not own.
 

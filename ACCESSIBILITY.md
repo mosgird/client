@@ -15,7 +15,7 @@ We aim to meet WCAG 2.2 Level AA for every client's user interface. This is a ta
 - Motion can be reduced, and nothing flashes more than three times per second.
 - Errors are announced to assistive technology and explained in text.
 - Text and interface components meet the WCAG AA contrast ratios.
-- Images, audio, and video shipped with the app have text alternatives. Assets are made by people, not AI tools (see [AI_POLICY.md](AI_POLICY.md) in mosgird/protocols).
+- Images, audio, and video shipped with the app have text alternatives. Assets are made by people, not AI tools (see [AI_POLICY.md](https://github.com/mosgird/protocols/blob/main/AI_POLICY.md) in mosgird/protocols).
 
 ## Testing
 

@@ -4,15 +4,14 @@
 
 ## Type of change
 
-- [ ] Specification text (`spec/`)
-- [ ] New or superseding decision record (`spec/decisions/`)
-- [ ] Open question added, changed, or closed
+- [ ] Client code
+- [ ] Tests
 - [ ] Tooling or CI
 - [ ] Documentation only
 
 ## AI use
 
-See [AI_POLICY.md](../AI_POLICY.md). Answer every line.
+See [AI_POLICY.md](https://github.com/mosgird/protocols/blob/main/AI_POLICY.md) in mosgird/protocols. Answer every line.
 
 - Tool used (or "none"):
 - Extent: [ ] none  [ ] brainstorming  [ ] drafted text  [ ] generated code  [ ] review only
@@ -21,17 +20,17 @@ See [AI_POLICY.md](../AI_POLICY.md). Answer every line.
 - I can explain and defend every line in this pull request: [ ] yes
 - If AI use is disclosed: every commit has `Co-authored-by` and `Task` trailers, and no session links appear in commits or here.
 
-## Specification sections affected
+## Specification
 
-<!-- For example: overview.md section 3.3, open question 4, decision 0002. -->
+<!-- The mosgird/protocols version or commit this change follows, and the sections it implements. For example: overview.md section 5.1, decision 0005. If the change needs a specification change, link the protocols pull request; it is merged first. -->
 
 ## Security and privacy impact
 
-<!-- Required. State what this change adds or removes in terms of what the relay server, other users, or network observers can learn. If there is no impact, say why. -->
+<!-- Required. State what this change adds or removes in terms of what contacts, group members, network observers, or transport relays can learn, and what it stores on the device. If there is no impact, say why. -->
 
 ## Checklist
 
-- [ ] `python3 scripts/check_spec.py` passes locally
-- [ ] Headings and anchors referenced from other files are updated
-- [ ] No uncertain statement is presented as fact; uncertain points are open questions
+- [ ] Tests that apply pass locally
+- [ ] Behavior matches the specification; any difference is a protocols pull request, not a change here
+- [ ] No uncertain statement is presented as fact
 - [ ] No session links in commits or in this description
